@@ -1,0 +1,19 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Круг-основа -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M50,50m-45,0a45,45 0 1,1 90,0a45,45 0 1,1 -90,0"/>
+
+    <!-- Иконка товара (упрощенный пакет) -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M30,35 L70,35 L70,75 L30,75 Z"/>
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M35,30 L65,30 L65,35 L35,35 Z"/>
+</vector>

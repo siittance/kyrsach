@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "455198757834",
+    "project_id": "florencemobile",
+    "storage_bucket": "florencemobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455198757834:android:257227fc7504516cd17533",
+        "android_client_info": {
+          "package_name": "com.example.florence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsV2yeT43GE5yUJQ_kVIGLaqqBDu5imT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

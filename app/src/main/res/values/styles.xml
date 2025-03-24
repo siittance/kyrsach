@@ -1,0 +1,8 @@
+<resources>
+    <!-- Стиль для текста в BottomNavigationView -->
+    <style name="BottomNavTextStyle">
+        <item name="android:textSize">15sp</item>  <!-- Уменьшаем размер текста -->
+        <item name="android:lineSpacingExtra">-2sp</item> <!-- Уменьшаем вертикальные отступы -->
+        <item name="android:letterSpacing">0</item> <!-- Интервал между буквами -->
+    </style>
+</resources>

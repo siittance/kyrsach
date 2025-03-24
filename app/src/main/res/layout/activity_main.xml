@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8D6"
+    tools:context=".MainActivity">
+
+    <!-- Шапка с логотипом и адресом -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <!-- Иконка приложения -->
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="97dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/logo" />
+
+        <!-- Блок с адресом (центрированный) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/app_icon"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Доставить по адресу:"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/address_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="указать адрес"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Остальная часть layout без изменений -->
+    <FrameLayout
+        android:layout_width="342dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/search_background">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_search" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="44dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="12dp"
+            android:background="@null"
+            android:hint="Поиск продуктов..."
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#444444"
+        android:layout_gravity="bottom" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"
+        app:backgroundTint="#FFF8D6"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemTextAppearanceInactive="@style/BottomNavTextStyle"
+        app:itemTextAppearanceActive="@style/BottomNavTextStyle"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

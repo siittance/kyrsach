@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_yellow"
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="Логотип"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-120dp"/>
+
+    <EditText
+        android:id="@+id/et_login"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/input_background"
+        android:hint="Почта"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:background="@drawable/input_background"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/again_password"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:hint="Подтвердите пароль"
+        android:inputType="textPassword"
+        android:background="@drawable/input_background"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="197dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_background"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

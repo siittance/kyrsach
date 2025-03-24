@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_yellow">#FFF8D6</color>
+    <color name="green">#6FB769</color>
+    <color name="nav_item_color">#444444</color> <!-- Черный цвет для текста и иконок -->
+    <color name="nav_item_color_selected">#FF4081</color> <!-- Цвет для выбранного элемента -->
+
+</resources>
