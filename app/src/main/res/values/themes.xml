@@ -3,6 +3,7 @@
     <style name="Base.Theme.Florence" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">#FFE568</item>
+        <item name="colorSecondary">#F78C00</item>
 
     </style>
 

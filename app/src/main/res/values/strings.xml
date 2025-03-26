@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Florence</string>
+    <string name="app_name" translatable="false">Florence</string>
+    <string name="yandex_mapkit_api_key">1f905670-92fb-4bb5-ace9-a3107428aaa7</string>
 </resources>

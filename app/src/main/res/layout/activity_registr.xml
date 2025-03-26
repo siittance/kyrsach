@@ -65,5 +65,11 @@
         android:text="Зарегистрироваться"
         android:textColor="@color/black" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:onClick="goToLogin"
+        android:text="Уже есть аккаунт? Войти"
+        android:textColor="#0066CC" />
 
 </LinearLayout>

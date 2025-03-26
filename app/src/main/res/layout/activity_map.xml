@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- MapView -->
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"/>
+
+    <!-- ImageView, накладывающийся на карту -->
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="97dp"
+        android:layout_height="58dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logo" />
+
+    <!-- Плашка с адресом доставки - теперь на одном уровне с лого -->
+    <TextView
+        android:id="@+id/delivery_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_address_background"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="Адрес доставки"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Кнопка выбора адреса -->
+    <Button
+        android:id="@+id/select_address_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/rounded_button_background"
+        android:elevation="8dp"
+        android:text="Выбрать этот адрес"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp" />
+
+    <!-- Нижняя линия -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="#444444"
+        android:layout_gravity="bottom" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_nav_menu"
+        app:backgroundTint="#FFF8D6"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="true"
+        app:itemTextAppearanceInactive="@style/BottomNavTextStyle"
+        app:itemTextAppearanceActive="@style/BottomNavTextStyle"/>
+</FrameLayout>
