@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-<<<<<<< HEAD
-
-=======
+    xmlns:tools="http://schemas.android.com/tools" >
     <!-- Разрешения на интернет и местоположение -->
->>>>>>> 295aa9b (noyt)
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-<<<<<<< HEAD
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-=======
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- API ключ для Yandex MapKit -->
     <meta-data
         android:name="com.yandex.mapkit.API_KEY"
         android:value="1f905670-92fb-4bb5-ace9-a3107428aaa7" />
 
     <application
-        android:label="@string/app_name"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher_foreground"
->>>>>>> 295aa9b (noyt)
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Florence"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-<<<<<<< HEAD
-=======
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <!-- Активности приложения -->
+        <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
@@ -43,22 +32,24 @@
             android:exported="false" /> <!-- Главная активность (AuthActivity) -->
         <activity
             android:name=".AuthActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Остальные активности, которые не должны быть стартовыми -->
+        </activity> <!-- Главная активность (MainActivity) -->
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
->>>>>>> 295aa9b (noyt)
             android:name=".RegistrActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".LocationActivity"
@@ -69,31 +60,6 @@
         <activity
             android:name=".FavoriteActivity"
             android:exported="false" />
-<<<<<<< HEAD
-        <activity
-            android:name=".AuthActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-    <meta-data
-        android:name="com.yandex.mapkit.API_KEY"
-        android:value="1f905670-92fb-4bb5-ace9-a3107428aaa7" />
-=======
     </application>
 
->>>>>>> 295aa9b (noyt)
 </manifest>
