@@ -7,13 +7,15 @@
     android:background="@color/light_yellow"
     android:padding="32dp">
 
+    <!-- Логотип -->
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="100dp"
         android:contentDescription="Логотип"
         android:src="@drawable/logo" />
 
+    <!-- Заголовок "Регистрация" -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,70 +24,60 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="-120dp"/>
+        android:layout_marginTop="-60dp"/>
 
+    <!-- Поле для ввода почты -->
     <EditText
         android:id="@+id/et_login"
-        android:layout_width="293dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/input_background"
         android:hint="Почта"
-<<<<<<< HEAD
-=======
         android:textColorHint="#444444"
->>>>>>> 295aa9b (noyt)
-        android:padding="10dp"
-        android:textColor="@color/black" />
+        android:padding="10dp" />
 
+    <!-- Поле для ввода пароля -->
     <EditText
         android:id="@+id/et_password"
-        android:layout_width="293dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Пароль"
-<<<<<<< HEAD
-=======
         android:textColorHint="#444444"
->>>>>>> 295aa9b (noyt)
         android:inputType="textPassword"
         android:background="@drawable/input_background"
         android:padding="10dp"
         android:textColor="@color/black"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Поле для подтверждения пароля -->
     <EditText
         android:id="@+id/again_password"
-        android:layout_width="293dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Подтвердите пароль"
-<<<<<<< HEAD
-=======
         android:textColorHint="#444444"
->>>>>>> 295aa9b (noyt)
         android:inputType="textPassword"
         android:background="@drawable/input_background"
         android:padding="10dp"
         android:textColor="@color/black"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Кнопка для регистрации -->
     <Button
         android:id="@+id/btn_login"
-<<<<<<< HEAD
-        android:layout_width="197dp"
-=======
-        android:layout_width="214dp"
->>>>>>> 295aa9b (noyt)
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_background"
         android:text="Зарегистрироваться"
         android:textColor="@color/black" />
 
+    <!-- Ссылка для перехода на экран авторизации -->
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:onClick="goToLogin"
         android:text="Уже есть аккаунт? Войти"
         android:textColor="#0066CC" />
-
 </LinearLayout>
