@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
+        android:text="Смена пароля"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -25,67 +25,31 @@
         android:layout_marginTop="-120dp"/>
 
     <EditText
-        android:id="@+id/et_login"
+        android:id="@+id/et_email"
         android:layout_width="293dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/input_background"
         android:hint="Почта"
-<<<<<<< HEAD
-=======
         android:textColorHint="#444444"
->>>>>>> 295aa9b (noyt)
-        android:padding="10dp"
-        android:textColor="@color/black" />
-
-    <EditText
-        android:id="@+id/et_password"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:hint="Пароль"
-<<<<<<< HEAD
-=======
-        android:textColorHint="#444444"
->>>>>>> 295aa9b (noyt)
-        android:inputType="textPassword"
         android:background="@drawable/input_background"
         android:padding="10dp"
         android:textColor="@color/black"
         android:layout_marginBottom="16dp"/>
 
-    <EditText
-        android:id="@+id/again_password"
-        android:layout_width="293dp"
-        android:layout_height="50dp"
-        android:hint="Подтвердите пароль"
-<<<<<<< HEAD
-=======
-        android:textColorHint="#444444"
->>>>>>> 295aa9b (noyt)
-        android:inputType="textPassword"
-        android:background="@drawable/input_background"
-        android:padding="10dp"
-        android:textColor="@color/black"
-        android:layout_marginBottom="16dp"/>
 
     <Button
-        android:id="@+id/btn_login"
-<<<<<<< HEAD
+        android:id="@+id/btn_checkEmail"
         android:layout_width="197dp"
-=======
-        android:layout_width="214dp"
->>>>>>> 295aa9b (noyt)
         android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/button_background"
-        android:text="Зарегистрироваться"
+        android:text="Подтвердить почту"
         android:textColor="@color/black" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:onClick="goToLogin"
-        android:text="Уже есть аккаунт? Войти"
+        android:text="К окну авторизации"
         android:textColor="#0066CC" />
 
 </LinearLayout>

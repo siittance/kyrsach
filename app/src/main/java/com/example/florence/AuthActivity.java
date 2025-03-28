@@ -19,9 +19,16 @@ public class AuthActivity extends AppCompatActivity {
 
     private EditText emailField, passwordField;
     private Button loginButton;
+<<<<<<< HEAD
     private TextView registerLink;
     private FirebaseAuth auth;
 
+=======
+    private TextView registerLink, changePassLink;
+    private FirebaseAuth auth;
+
+
+>>>>>>> 295aa9b (noyt)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,9 +40,17 @@ public class AuthActivity extends AppCompatActivity {
         passwordField = findViewById(R.id.et_password);
         loginButton = findViewById(R.id.btn_login);
         registerLink = findViewById(R.id.tv_register);
+<<<<<<< HEAD
 
         loginButton.setOnClickListener(v -> loginUser());
         registerLink.setOnClickListener(v -> goToRegisterActivity());
+=======
+        changePassLink = findViewById(R.id.tv_forgot);
+
+        loginButton.setOnClickListener(v -> loginUser());
+        registerLink.setOnClickListener(v -> goToRegisterActivity());
+        changePassLink.setOnClickListener(v -> goToChangeActivity());
+>>>>>>> 295aa9b (noyt)
     }
 
     private void loginUser() {
@@ -83,6 +98,7 @@ public class AuthActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+<<<<<<< HEAD
     //@Override
     //protected void onStart() {
     //super.onStart();
@@ -90,5 +106,19 @@ public class AuthActivity extends AppCompatActivity {
     //if (currentUser != null) {
     //goToMainActivity();
     //}
+=======
+    private void goToChangeActivity(){
+        Intent intent = new Intent(AuthActivity.this, ForgotPasswordActivity.class);
+        startActivity(intent);
+    }
+
+    //@Override
+    //protected void onStart() {
+        //super.onStart();
+        //FirebaseUser currentUser = auth.getCurrentUser();
+        //if (currentUser != null) {
+            //goToMainActivity();
+        //}
+>>>>>>> 295aa9b (noyt)
     //}
 }

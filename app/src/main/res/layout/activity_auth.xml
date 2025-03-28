@@ -30,6 +30,10 @@
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/input_background"
+<<<<<<< HEAD
+=======
+        android:textColorHint="#444444"
+>>>>>>> 295aa9b (noyt)
         android:hint="Почта"
         android:padding="10dp"
         android:textColor="@color/black" />
@@ -40,6 +44,10 @@
         android:layout_height="50dp"
         android:hint="Пароль"
         android:inputType="textPassword"
+<<<<<<< HEAD
+=======
+        android:textColorHint="#444444"
+>>>>>>> 295aa9b (noyt)
         android:background="@drawable/input_background"
         android:padding="10dp"
         android:textColor="@color/black"
@@ -55,6 +63,7 @@
         android:textColor="@color/black" />
 
     <TextView
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Еще нет аккаунта?"
@@ -70,6 +79,15 @@
         android:textStyle="bold"
         android:clickable="true"
         android:focusable="true"/>
+=======
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Еще нет аккаунта? Регистрация"
+        android:textColor="@color/green"
+        android:layout_marginBottom="8dp"/>
+
+>>>>>>> 295aa9b (noyt)
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -78,4 +96,17 @@
         android:layout_gravity="center"
         android:visibility="gone"/>
 
+<<<<<<< HEAD
+=======
+    <TextView
+        android:id="@+id/tv_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Забыли пароль?"
+        android:textColor="#0066CC"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"/>
+
+>>>>>>> 295aa9b (noyt)
 </LinearLayout>
